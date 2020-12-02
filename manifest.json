@@ -1,0 +1,12 @@
+{
+    "name": "Translate",
+    "version": "1.0",
+    "description": "Analyze and Translate a page!",
+    "manifest_version": 2,
+    "browser_action": {
+    	"default_ico": "cat.png",
+    	"default_popup": "popup.html",
+    	"default_title": "Analyze and Translate a page" 
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://code.jquery.com/jquery-3.5.1.js 'sha256-6HFgdkPl71VT4KMWRS0JQ40cfJXFPRUXkSObN7QO0So='; object-src 'self'"
+  }
