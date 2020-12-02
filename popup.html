@@ -4,19 +4,27 @@
 	<title></title>
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<script src="popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="popup.css" >
 </head>
 <body style="width: 400px;height: 600px;background-color: #e0e0eb">
+	<div style="margin-top: 40px;">
 	<form action="" method="POST">
-		Enter URL<input type="text" id="url">
-		<select id="language" name="language">
+		<center><b>Enter URL</b></center>
+		<input type="text" id="url" placeholder="Enter the url">
+		<b>Select Language</b> <select id="language" name="language">
     		<option value="English">English</option>
     		<option value="Hindi">Hindi</option>
     		<option value="Tamil">Tamil</option>
     		<option value="French">French</option>
   		</select>
-
 	</form>
-	<button id="bttn" onclick="func()">click me</button>
+	</div>
+
+	<button style="margin-top: 10px;" id="bttn" onclick="func()">
+	Analyse</button>
+	<button style="margin-top: 10px;" id="translate" onclick="func()">
+	Translate</button>
+	<br>
 	<p id="load" width="100%" style="margin-top:40px;display: none">LOading..</p>
 	<section id=insert></section>
 </body>
